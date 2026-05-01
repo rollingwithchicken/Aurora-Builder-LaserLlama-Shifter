@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name></name>
+		<update version="1.0.0">
+			<file name="source.xml" url="https://raw.githubusercontent.com/rmurgasa/Aurora-Builder-LaserLlama-Shifter/main/source.xml" />
+		</update>
+	</info>
+
+	<element name="laserllama's Shifter" type="Source" source="laserllama's Shifter" id="ID_LASERLL_SOURCE_SHIFTER">
+		<description>
+			<![CDATA[<p>Unleash the primal ferocity of your Bloodline with this Wild Shape-focused class by laserllama. Includes the Avian, Brute, Carnivore, and Reptilian Bloodlines.</p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">LASERLL</set>
+			<set name="url">https://www.gmbinder.com/</set>
+			<set name="image">https://styles.redditmedia.com/t5_d3mwk/styles/profileIcon_zziwq0k9for51.png</set>
+			<set name="author" abbreviation="LASERLL" url="https://www.gmbinder.com/profile/laserllama">laserllama</set>
+			<set name="official">false</set>
+			<set name="supplement">false</set>
+			<set name="homebrew">true</set>
+			<set name="release">20250418</set>
+		</setters>
+	</element>
+</elements>

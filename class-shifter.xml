@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Shifter</name>
+		<update version="1.0.0">
+			<file name="class-shifter.xml" url="https://raw.githubusercontent.com/rmurgasa/Aurora-Builder-LaserLlama-Shifter/main/class-shifter.xml" />
+		</update>
+	</info>
+
+	<element name="Shifter" type="Class" source="laserllama's Shifter" id="ID_LASERLL_CLASS_SHIFTER">
+		<description>
+			<p>Shifters are warriors imbued with primal bestial powers that let them change their forms, taking on the shapes of wild Beasts.</p>
+			<h4>PRIMAL CONNECTION</h4>
+			<p>Shifters live close to the wilderness and develop primal powers of their own. This mystic bond infuses their blood with bestial power, enhancing their senses and changing their form.</p>
+			<h4>MANY FORMS</h4>
+			<p>Shifters can take on the form of beasts they have bonded with. Each Shifter favors a Bloodline of beasts, but all Shifters can learn the shape of any animal they encounter.</p>
+			<h4>CREATING YOUR SHIFTER</h4>
+			<p>When creating your Shifter, decide how they gained their mystical abilities. They may descend from an elder Archdruid or lycanthrope, be blessed by an Archfey or Celestial, or have developed their gift independently in the wild.</p>
+			<h2>CLASS FEATURES</h2>
+			<p>As a Shifter, you gain the following class features.</p>
+			<h5 class="caption">HIT POINTS</h5>
+			<ul class="unstyled">
+				<li><strong>Hit Dice:</strong> 1d10 per Shifter level</li>
+				<li><strong>Hit Points at 1st Level:</strong> 10 + your Constitution modifier</li>
+				<li><strong>Hit Points at Higher Levels:</strong> 1d10 (or 6) + your Constitution modifier per Shifter level after 1st</li>
+			</ul>
+			<h5 class="caption">PROFICIENCIES</h5>
+			<ul class="unstyled mb">
+				<li><strong>Armor:</strong> Light armor</li>
+				<li><strong>Weapons:</strong> Simple weapons, blowguns, longbows, nets</li>
+				<li><strong>Tools:</strong> None</li>
+			</ul>
+			<ul class="unstyled">
+				<li><strong>Saving Throws:</strong> Strength, Dexterity</li>
+				<li><strong>Skills:</strong> Choose two from Acrobatics, Animal Handling, Athletics, Nature, Perception, Stealth, and Survival</li>
+			</ul>
+			<h5 class="caption">EQUIPMENT</h5>
+			<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+			<ul>
+				<li>(a) two clubs, (b) a greatclub, or (c) a quarterstaff</li>
+				<li>(a) a shortbow and 20 arrows, or (b) four javelins</li>
+				<li>leather armor, a dagger, and an explorer's pack</li>
+			</ul>
+			<p>Alternately, if your group uses the starting wealth rule, the Shifter starts with 2d4 x 10 gp.</p>
+			<h5 class="caption">THE SHIFTER</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="col-10">Proficiency Bonus</td><td class="left">Features</td><td class="col-10">Max. CR</td></tr>
+				</thead>
+				<tr><td> 1st</td><td>+2</td><td class="left">Feral Physique, Wild Empathy</td><td>-</td></tr>
+				<tr><td> 2nd</td><td>+2</td><td class="left">Bloodline, Wild Shape</td><td>1/2</td></tr>
+				<tr><td> 3rd</td><td>+2</td><td class="left">Bestial Instincts</td><td>1</td></tr>
+				<tr><td> 4th</td><td>+2</td><td class="left">Ability Score Improvement</td><td>1</td></tr>
+				<tr><td> 5th</td><td>+3</td><td class="left">Feral Warrior, Mystical Strikes</td><td>1</td></tr>
+				<tr><td> 6th</td><td>+3</td><td class="left">Adrenaline Surge</td><td>2</td></tr>
+				<tr><td> 7th</td><td>+3</td><td class="left">Bloodline Feature</td><td>2</td></tr>
+				<tr><td> 8th</td><td>+3</td><td class="left">Ability Score Improvement</td><td>2</td></tr>
+				<tr><td> 9th</td><td>+4</td><td class="left">Wild Awareness</td><td>3</td></tr>
+				<tr><td>10th</td><td>+4</td><td class="left">Primal Resilience</td><td>3</td></tr>
+				<tr><td>11th</td><td>+4</td><td class="left">Primeval Form</td><td>3</td></tr>
+				<tr><td>12th</td><td>+4</td><td class="left">Ability Score Improvement</td><td>4</td></tr>
+				<tr><td>13th</td><td>+5</td><td class="left">Bloodline Feature</td><td>4</td></tr>
+				<tr><td>14th</td><td>+5</td><td class="left">Feral Senses</td><td>4</td></tr>
+				<tr><td>15th</td><td>+5</td><td class="left">Mythic Forms</td><td>5</td></tr>
+				<tr><td>16th</td><td>+5</td><td class="left">Ability Score Improvement</td><td>5</td></tr>
+				<tr><td>17th</td><td>+6</td><td class="left">Primeval Resurgence</td><td>5</td></tr>
+				<tr><td>18th</td><td>+6</td><td class="left">Bloodline Feature</td><td>6</td></tr>
+				<tr><td>19th</td><td>+6</td><td class="left">Ability Score Improvement</td><td>6</td></tr>
+				<tr><td>20th</td><td>+6</td><td class="left">Force of Nature</td><td>6</td></tr>
+			</table>
+			<div element="ID_LASERLL_CLASS_FEATURE_SHIFTER_FERAL_PHYSIQUE" />
+			<div element="ID_LASERLL_CLASS_FEATURE_SHIFTER_WILD_EMPATHY" />
+			<div element="ID_LASERLL_CLASS_FEATURE_SHIFTER_BLOODLINE" />
+			<div element="ID_LASERLL_CLASS_FEATURE_SHIFTER_WILD_SHAPE" />
+			<div element="ID_LASERLL_CLASS_FEATURE_SHIFTER_BESTIAL_INSTINCTS" />
+			<div element="ID_LASERLL_CLASS_FEATURE_SHIFTER_ASI" />
+			<div element="ID_LASERLL_CLASS_FEATURE_SHIFTER_FERAL_WARRIOR" />
+			<div element="ID_LASERLL_CLASS_FEATURE_SHIFTER_MYSTICAL_STRIKES" />
+			<div element="ID_LASERLL_CLASS_FEATURE_SHIFTER_ADRENALINE_SURGE" />
+			<div element="ID_LASERLL_CLASS_FEATURE_SHIFTER_WILD_AWARENESS" />
+			<div element="ID_LASERLL_CLASS_FEATURE_SHIFTER_PRIMAL_RESILIENCE" />
+			<div element="ID_LASERLL_CLASS_FEATURE_SHIFTER_PRIMEVAL_FORM" />
+			<div element="ID_LASERLL_CLASS_FEATURE_SHIFTER_FERAL_SENSES" />
+			<div element="ID_LASERLL_CLASS_FEATURE_SHIFTER_MYTHIC_FORMS" />
+			<div element="ID_LASERLL_CLASS_FEATURE_SHIFTER_PRIMEVAL_RESURGENCE" />
+			<div element="ID_LASERLL_CLASS_FEATURE_SHIFTER_FORCE_OF_NATURE" />
+		</description>
+		<setters>
+			<set name="hd">d10</set>
+			<set name="short">A primal warrior who changes form, taking on the shapes of wild Beasts.</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_LASERLL_MULTICLASS_SHIFTER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_LASERLL_MULTICLASS_SHIFTER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_BLOWGUN" requirements="!ID_LASERLL_MULTICLASS_SHIFTER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGBOW" requirements="!ID_LASERLL_MULTICLASS_SHIFTER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_NET" requirements="!ID_LASERLL_MULTICLASS_SHIFTER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" requirements="!ID_LASERLL_MULTICLASS_SHIFTER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" requirements="!ID_LASERLL_MULTICLASS_SHIFTER" />
+			<select type="Proficiency" name="Skill Proficiency, Shifter" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_SURVIVAL" number="2" requirements="!ID_LASERLL_MULTICLASS_SHIFTER" />
+			<grant type="Class Feature" id="ID_LASERLL_CLASS_FEATURE_SHIFTER_FERAL_PHYSIQUE" level="1" />
+			<grant type="Class Feature" id="ID_LASERLL_CLASS_FEATURE_SHIFTER_WILD_EMPATHY" level="1" />
+			<grant type="Class Feature" id="ID_LASERLL_CLASS_FEATURE_SHIFTER_BLOODLINE" level="2" />
+			<grant type="Class Feature" id="ID_LASERLL_CLASS_FEATURE_SHIFTER_WILD_SHAPE" level="2" />
+			<grant type="Class Feature" id="ID_LASERLL_CLASS_FEATURE_SHIFTER_BESTIAL_INSTINCTS" level="3" />
+			<grant type="Class Feature" id="ID_LASERLL_CLASS_FEATURE_SHIFTER_ASI" level="4" />
+			<grant type="Class Feature" id="ID_LASERLL_CLASS_FEATURE_SHIFTER_FERAL_WARRIOR" level="5" />
+			<grant type="Class Feature" id="ID_LASERLL_CLASS_FEATURE_SHIFTER_MYSTICAL_STRIKES" level="5" />
+			<grant type="Class Feature" id="ID_LASERLL_CLASS_FEATURE_SHIFTER_ADRENALINE_SURGE" level="6" />
+			<grant type="Class Feature" id="ID_LASERLL_CLASS_FEATURE_SHIFTER_WILD_AWARENESS" level="9" />
+			<grant type="Class Feature" id="ID_LASERLL_CLASS_FEATURE_SHIFTER_PRIMAL_RESILIENCE" level="10" />
+			<grant type="Class Feature" id="ID_LASERLL_CLASS_FEATURE_SHIFTER_PRIMEVAL_FORM" level="11" />
+			<grant type="Class Feature" id="ID_LASERLL_CLASS_FEATURE_SHIFTER_FERAL_SENSES" level="14" />
+			<grant type="Class Feature" id="ID_LASERLL_CLASS_FEATURE_SHIFTER_MYTHIC_FORMS" level="15" />
+			<grant type="Class Feature" id="ID_LASERLL_CLASS_FEATURE_SHIFTER_PRIMEVAL_RESURGENCE" level="17" />
+			<grant type="Class Feature" id="ID_LASERLL_CLASS_FEATURE_SHIFTER_FORCE_OF_NATURE" level="20" />
+		</rules>
+		<multiclass id="ID_LASERLL_MULTICLASS_SHIFTER">
+			<prerequisite>Constitution 13</prerequisite>
+			<requirements>[con:13]</requirements>
+			<setters>
+				<set name="multiclass proficiencies">simple weapons and one skill of your choice from the Shifter skill list.</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+				<select type="Proficiency" name="Skill Proficiency, Shifter" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_SURVIVAL" number="1" />
+			</rules>
+		</multiclass>
+	</element>
+
+	<element name="Feral Physique" type="Class Feature" source="laserllama's Shifter" id="ID_LASERLL_CLASS_FEATURE_SHIFTER_FERAL_PHYSIQUE">
+		<description>
+			<p>At 1st level, the primal power that courses through your veins has made your physical traits more bestial. You gain the following benefits:</p>
+			<p class="indent"><strong>Keen Senses.</strong> When you make a Wisdom ability check based on your sense of hearing, sight, or smell, you have advantage on your roll.</p>
+			<p class="indent"><strong>Natural Armor.</strong> So long as you are not wearing armor or a shield, your Armor Class is equal to 13 + your Constitution modifier, unless it was higher.</p>
+			<p class="indent"><strong>Natural Weapons.</strong> Your unarmed strikes with these Natural Weapons deal 1d8 bludgeoning, piercing, or slashing damage on hit, and you use either Strength or Dexterity for their attack and damage rolls.</p>
+		</description>
+		<sheet>
+			<description>Keen Senses: advantage on Wisdom checks based on hearing, sight, or smell. Natural Armor: when not wearing armor or a shield, your AC is {shifter:natural armor}. Natural Weapons: unarmed strikes deal 1d8 bludgeoning, piercing, or slashing damage, using STR or DEX.</description>
+		</sheet>
+		<rules>
+			<stat name="shifter:natural armor:base" value="13" />
+			<stat name="shifter:natural armor:constitution" value="constitution:modifier" />
+			<stat name="shifter:natural armor" value="shifter:natural armor:base" />
+			<stat name="shifter:natural armor" value="shifter:natural armor:constitution" />
+			<stat name="ac:calculation" value="shifter:natural armor" bonus="calculation" equipped="[armor:none],[shield:none]" alt="Natural Armor (Shifter)" />
+		</rules>
+	</element>
+
+	<element name="Wild Empathy" type="Class Feature" source="laserllama's Shifter" id="ID_LASERLL_CLASS_FEATURE_SHIFTER_WILD_EMPATHY">
+		<description>
+			<p>You gain the ability to verbally communicate with and understand Beasts. This does not mean that Beasts are always friendly toward you, and when you communicate with a Beast, its awareness and ability to recall knowledge is limited by its Intelligence score.</p>
+			<p class="indent">Whenever you make an ability check to soothe a wild Beast, such as with a Wisdom (Animal Handling) check, you can add your Shifter level to the result of your roll.</p>
+		</description>
+		<sheet>
+			<description>You can verbally communicate with and understand Beasts. Add {level:shifter} to ability checks to soothe a wild Beast.</description>
+		</sheet>
+	</element>
+
+	<element name="Bloodline" type="Class Feature" source="laserllama's Shifter" id="ID_LASERLL_CLASS_FEATURE_SHIFTER_BLOODLINE">
+		<description>
+			<p>At 2nd level, you choose a Bloodline that best represents your primal abilities and connection to wild animals: Avian, Brute, Carnivore, or Reptilian. Your Bloodline grants you features at 2nd, 7th, 13th, and 18th levels.</p>
+			<p class="indent">Each Shifter Bloodline has a deep connection to certain types of Beast, known as Bloodline Shapes. Any Beast Shapes you instinctively learn are limited to these Bloodline Shapes.</p>
+		</description>
+		<sheet display="false">
+			<description>Choose a Shifter Bloodline.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype" name="Shifter Bloodline" supports="Shifter Bloodline" />
+		</rules>
+	</element>
+
+	<element name="Wild Shape" type="Class Feature" source="laserllama's Shifter" id="ID_LASERLL_CLASS_FEATURE_SHIFTER_WILD_SHAPE">
+		<description>
+			<p>At 2nd level, you know two Beast Shapes of your choice of CR 1/2 or lower, both of which must be Bloodline Shapes. As a bonus action, you can Shift to magically take the form of one Beast Shape that you know.</p>
+			<p class="indent">When you Shift, your game statistics are replaced by those of the Beast, but you retain your alignment, personality, hit points, and Intelligence, Wisdom, and Charisma scores. You also retain all of your skill and saving throw proficiencies, in addition to gaining those of the Beast. If you and your Beast Shape both share a proficiency, use the higher bonus.</p>
+			<p class="indent">You revert to your normal form if you are Incapacitated or if you use your bonus action to do so. You can Shift from one Beast Shape directly into another, but if you spend 1 hour in Beast Shapes without returning to your normal form, you instantly revert to your normal form.</p>
+			<p class="indent">When you Shift, natural or unrefined equipment can merge with your Beast Shape. Metal or highly processed equipment falls to the ground in your space. You cannot cast spells while in a Beast Shape, but you can maintain concentration on spells and other abilities used before you Shifted.</p>
+			<p class="indent">When one of your Beast Shapes forces a creature to make a saving throw, you can use the DC in its stat block, or your Shifter save DC. Shifter save DC = 8 + your proficiency bonus + your Constitution modifier.</p>
+			<h5 class="caption">SHIFTER MAXIMUM CR</h5>
+			<table class="class-features">
+				<thead><tr><td>Level</td><td>Max. CR</td></tr></thead>
+				<tr><td>2nd</td><td>1/2</td></tr>
+				<tr><td>3rd</td><td>1</td></tr>
+				<tr><td>6th</td><td>2</td></tr>
+				<tr><td>9th</td><td>3</td></tr>
+				<tr><td>12th</td><td>4</td></tr>
+				<tr><td>15th</td><td>5</td></tr>
+				<tr><td>18th</td><td>6</td></tr>
+			</table>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can Shift into a Beast Shape you know of CR {shifter:wild shape:cr} or lower. Shifter save DC = {shifter:dc}. You retain alignment, personality, hit points, and INT, WIS, and CHA. You revert if Incapacitated, if you use a bonus action, or after 1 hour without returning to normal form.</description>
+		</sheet>
+		<rules>
+			<stat name="shifter:wild shape:cr" value="0.5" level="2" bonus="base" />
+			<stat name="shifter:wild shape:cr" value="1" level="3" bonus="base" />
+			<stat name="shifter:wild shape:cr" value="2" level="6" bonus="base" />
+			<stat name="shifter:wild shape:cr" value="3" level="9" bonus="base" />
+			<stat name="shifter:wild shape:cr" value="4" level="12" bonus="base" />
+			<stat name="shifter:wild shape:cr" value="5" level="15" bonus="base" />
+			<stat name="shifter:wild shape:cr" value="6" level="18" bonus="base" />
+			<stat name="shifter:dc" value="8" />
+			<stat name="shifter:dc" value="proficiency" />
+			<stat name="shifter:dc" value="constitution:modifier" />
+		</rules>
+	</element>
+
+	<element name="Bestial Instincts" type="Class Feature" source="laserllama's Shifter" id="ID_LASERLL_CLASS_FEATURE_SHIFTER_BESTIAL_INSTINCTS">
+		<description>
+			<p>Beginning at 3rd level, so long as you are not Incapacitated or Surprised, you have advantage on all initiative rolls, and you can instantly Shift into one of your Beast Shapes when you roll initiative.</p>
+		</description>
+		<sheet>
+			<description>While not Incapacitated or Surprised, you have advantage on initiative rolls and can instantly Shift when you roll initiative.</description>
+		</sheet>
+	</element>
+
+	<element name="Ability Score Improvement" type="Class Feature" source="laserllama's Shifter" id="ID_LASERLL_CLASS_FEATURE_SHIFTER_ASI">
+		<compendium display="false" />
+		<description>
+			<p>At 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or two ability scores by 1. You cannot use this feature to increase any ability score above 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Shifter 4)" supports="Improvement Option,Shifter,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Shifter 8)" supports="Improvement Option,Shifter,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Shifter 12)" supports="Improvement Option,Shifter,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Shifter 16)" supports="Improvement Option,Shifter,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Shifter 19)" supports="Improvement Option,Shifter,19" level="19" />
+		</rules>
+	</element>
+
+	<element name="Feral Warrior" type="Class Feature" source="laserllama's Shifter" id="ID_LASERLL_CLASS_FEATURE_SHIFTER_FERAL_WARRIOR">
+		<description>
+			<p>Starting at 5th level, whenever you take the Attack action in your normal form, you can make two attacks instead of one. You can also take the Multiattack action when in Beast Shape if your Beast Shape has that feature.</p>
+			<p class="indent">Whenever you take the Dash or Disengage action, you can make a Natural Weapon attack as a bonus action.</p>
+		</description>
+		<sheet>
+			<description>When you take the Attack action in normal form, you can make two attacks. You can take Multiattack in Beast Shape if the Beast Shape has it. When you Dash or Disengage, you can make a Natural Weapon attack as a bonus action.</description>
+		</sheet>
+	</element>
+
+	<element name="Mystical Strikes" type="Class Feature" source="laserllama's Shifter" id="ID_LASERLL_CLASS_FEATURE_SHIFTER_MYSTICAL_STRIKES">
+		<description>
+			<p>At 5th level, your Natural Weapon attacks, in both your normal form and Beast Shapes, count as magical for overcoming resistances and immunities. You can also use the attack bonus of your normal form's Natural Weapon attacks whenever you are in Beast Shape, unless your Beast Shape's attack bonus would be higher.</p>
+		</description>
+		<sheet>
+			<description>Your Natural Weapon attacks in normal form and Beast Shapes count as magical. You can use your normal form Natural Weapon attack bonus in Beast Shape unless the Beast Shape's attack bonus is higher.</description>
+		</sheet>
+	</element>
+
+	<element name="Adrenaline Surge" type="Class Feature" source="laserllama's Shifter" id="ID_LASERLL_CLASS_FEATURE_SHIFTER_ADRENALINE_SURGE">
+		<description>
+			<p>Starting at 6th level, whenever you take damage, you can use a reaction to gain temporary hit points equal to the damage taken. These temporary hit points last for 1 minute.</p>
+			<p class="indent">You can use this reaction a number of times equal to your normal form's Constitution modifier, minimum once. You regain all uses at the end of each short or long rest.</p>
+		</description>
+		<sheet action="Reaction" usage="CON mod/Short Rest">
+			<description>When you take damage, gain temporary hit points equal to the damage taken. These temporary hit points last for 1 minute.</description>
+		</sheet>
+	</element>
+
+	<element name="Wild Awareness" type="Class Feature" source="laserllama's Shifter" id="ID_LASERLL_CLASS_FEATURE_SHIFTER_WILD_AWARENESS">
+		<description>
+			<p>At 9th level, when you finish a short or long rest, you gain the benefits of commune with nature.</p>
+		</description>
+		<sheet>
+			<description>When you finish a short or long rest, you gain the benefits of commune with nature.</description>
+		</sheet>
+	</element>
+
+	<element name="Primal Resilience" type="Class Feature" source="laserllama's Shifter" id="ID_LASERLL_CLASS_FEATURE_SHIFTER_PRIMAL_RESILIENCE">
+		<description>
+			<p>Beginning at 10th level, when you fail a saving throw, you can expend a use of Adrenaline Surge to add your normal form's Constitution modifier, minimum +1, to your roll, possibly turning a failure into a success.</p>
+		</description>
+		<sheet>
+			<description>When you fail a saving throw, expend one Adrenaline Surge use to add your normal form's CON modifier to the roll, possibly turning a failure into a success.</description>
+		</sheet>
+	</element>
+
+	<element name="Primeval Form" type="Class Feature" source="laserllama's Shifter" id="ID_LASERLL_CLASS_FEATURE_SHIFTER_PRIMEVAL_FORM">
+		<description>
+			<p>Starting at 11th level, when you Shift into a Bloodline Shape, you can infuse your transformation with ancient power. Until you Shift out, your Beast Shape gains the following benefits:</p>
+			<ul>
+				<li>It grows to become Large in size, so long as there is room.</li>
+				<li>It resists all bludgeoning, piercing, and slashing damage.</li>
+				<li>Its Natural Weapon attacks deal a bonus 1d8 damage.</li>
+				<li>It has advantage on all ability checks and saving throws that use its Strength or Dexterity.</li>
+			</ul>
+			<p>You can transform into a Primeval Form three times. You regain one expended use when you finish a short rest, and all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet usage="3/Long Rest">
+			<description>When you Shift into a Bloodline Shape, you can make it Primeval: Large size if there is room, resistance to bludgeoning, piercing, and slashing damage, +1d8 Natural Weapon damage, and advantage on STR and DEX checks and saves. Regain one use on a short rest.</description>
+		</sheet>
+	</element>
+
+	<element name="Feral Senses" type="Class Feature" source="laserllama's Shifter" id="ID_LASERLL_CLASS_FEATURE_SHIFTER_FERAL_SENSES">
+		<description>
+			<p>Starting at 14th level, you cannot have disadvantage on any attack roll you make that targets a creature within 30 feet.</p>
+		</description>
+		<sheet>
+			<description>You cannot have disadvantage on attack rolls against creatures within 30 feet.</description>
+		</sheet>
+	</element>
+
+	<element name="Mythic Forms" type="Class Feature" source="laserllama's Shifter" id="ID_LASERLL_CLASS_FEATURE_SHIFTER_MYTHIC_FORMS">
+		<description>
+			<p>Starting at 15th level, you gain the ability to Shift into legendary Beasts of CR 5. Due to their mythical power, you can only Shift into each Beast Shape you know of CR 5 or higher once between each short or long rest.</p>
+		</description>
+		<sheet>
+			<description>You can Shift into Beasts of CR 5 or higher. You can only Shift into each Beast Shape you know of CR 5 or higher once between short or long rests.</description>
+		</sheet>
+	</element>
+
+	<element name="Primeval Resurgence" type="Class Feature" source="laserllama's Shifter" id="ID_LASERLL_CLASS_FEATURE_SHIFTER_PRIMEVAL_RESURGENCE">
+		<description>
+			<p>Starting at 17th level, you can gain the benefits of Primeval Form any time you use Wild Shape to Shift into a Bloodline Shape.</p>
+		</description>
+		<sheet>
+			<description>You can gain the benefits of Primeval Form any time you Shift into a Bloodline Shape.</description>
+		</sheet>
+	</element>
+
+	<element name="Force of Nature" type="Class Feature" source="laserllama's Shifter" id="ID_LASERLL_CLASS_FEATURE_SHIFTER_FORCE_OF_NATURE">
+		<description>
+			<p>At 20th level, you can Shift into Beast Shapes with a CR of 5 or 6 without limit. You also regain one expended use of Adrenaline Surge at the start of each of your turns in combat.</p>
+		</description>
+		<sheet>
+			<description>You can Shift into CR 5 or 6 Beast Shapes without limit. At the start of each of your turns in combat, regain one expended use of Adrenaline Surge.</description>
+		</sheet>
+	</element>
+
+	<element name="Avian Bloodline" type="Archetype" source="laserllama's Shifter" id="ID_LASERLL_ARCHETYPE_SHIFTER_AVIAN">
+		<supports>Shifter Bloodline</supports>
+		<description>
+			<p>The great heights and winds call to you. Within your veins flows the primal power of great Beasts of the air.</p>
+			<div element="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_AVIAN_SHAPES" />
+			<div element="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_SWIFT_WING" />
+			<div element="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_FEATHERED_FLIGHT" />
+			<div element="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_BUFFETING_WINDS" />
+			<div element="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_MASTER_OF_THE_WINDS" />
+			<h5 class="caption">AVIAN BEASTS</h5>
+			<p>Chicken, Owl, Raven, Vulture, Hawk, Heron, Chicken Giant, Falcon, Emu, Eagle, Owl Giant, Vulture Giant, Emu Giant, Hawk Giant, Falcon Giant, Heron Giant, Terror Bird, Royal Eagle.</p>
+		</description>
+		<sheet display="false"><description>A Shifter Bloodline connected to avian beasts.</description></sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_AVIAN_SHAPES" level="2" />
+			<grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_SWIFT_WING" level="2" />
+			<grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_FEATHERED_FLIGHT" level="7" />
+			<grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_BUFFETING_WINDS" level="13" />
+			<grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_MASTER_OF_THE_WINDS" level="18" />
+		</rules>
+	</element>
+
+	<element name="Avian Shapes" type="Archetype Feature" source="laserllama's Shifter" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_AVIAN_SHAPES">
+		<description><p>All Beasts with the Avian creature subtype are considered Bloodline Shapes for you.</p></description>
+		<sheet><description>All Beasts with the Avian creature subtype are Bloodline Shapes for you.</description></sheet>
+	</element>
+	<element name="Swift Wing" type="Archetype Feature" source="laserllama's Shifter" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_SWIFT_WING">
+		<description><p>When you are in your normal form or a Bloodline Shape, you can take the Dash action as a bonus action on your turn. When you do so, opportunity attacks against you are made with disadvantage until the end of your current turn.</p></description>
+		<sheet action="Bonus Action"><description>In normal form or a Bloodline Shape, you can Dash as a bonus action. Opportunity attacks against you have disadvantage until the end of this turn.</description></sheet>
+	</element>
+	<element name="Feathered Flight" type="Archetype Feature" source="laserllama's Shifter" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_FEATHERED_FLIGHT">
+		<description><p>In your normal form, you can use a bonus action to sprout or retract large feathered wings that grant you a flying speed equal to your walking speed. Whenever you have a flying speed, in normal form or Beast Shape, you have advantage on Dexterity ability checks and Dexterity saving throws.</p></description>
+		<sheet action="Bonus Action"><description>Sprout or retract wings that grant a flying speed equal to walking speed. Whenever you have a flying speed, you have advantage on DEX checks and saves.</description></sheet>
+		<rules>
+			<stat name="speed:fly" value="speed" bonus="base" />
+		</rules>
+	</element>
+	<element name="Buffeting Winds" type="Archetype Feature" source="laserllama's Shifter" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_BUFFETING_WINDS">
+		<description><p>When you have a flying speed, you can use your bonus action to buffet enemies with the wind. Choose an adjacent 20-foot cone, a 30-foot by 5-foot line, or the area within a 10-foot radius of you. Creatures in that area must make a Strength saving throw against your Shifter save DC. On a failure, they are thrown 20 feet away from you in a straight line. The distance is halved for each size the creature is larger than you.</p></description>
+		<sheet action="Bonus Action"><description>When you have a flying speed, force creatures in an adjacent 20-foot cone, 30-foot by 5-foot line, or 10-foot radius to make a STR save against your Shifter DC. On failure, they are thrown 20 feet away from you. Distance is halved for each size larger than you.</description></sheet>
+	</element>
+	<element name="Master of the Winds" type="Archetype Feature" source="laserllama's Shifter" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_MASTER_OF_THE_WINDS">
+		<description><p>As a bonus action, you can use Buffeting Winds to create the effect of the whirlwind spell in a space adjacent to you. This effect uses your Shifter save DC, does not require concentration, and you are immune to its effects. As a bonus action, you can use Buffeting Winds to move the whirlwind up to 30 feet so long as you are adjacent to it. Once you use this feature, you must finish a short or long rest before you can conjure another whirlwind.</p></description>
+		<sheet action="Bonus Action" usage="1/Short Rest"><description>Use Buffeting Winds to create a whirlwind adjacent to you. It uses your Shifter DC, does not require concentration, and you are immune. As a bonus action, move it up to 30 feet while adjacent to it.</description></sheet>
+	</element>
+
+	<element name="Brute Bloodline" type="Archetype" source="laserllama's Shifter" id="ID_LASERLL_ARCHETYPE_SHIFTER_BRUTE">
+		<supports>Shifter Bloodline</supports>
+		<description>
+			<p>In your blood flows the power of the great beasts of the wilds, infusing you with primal resilience.</p>
+			<div element="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_BRUTE_SHAPES" />
+			<div element="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_PRIMAL_FORTITUDE" />
+			<div element="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_RESILIENT_HIDE" />
+			<div element="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_STAMPEDE" />
+			<div element="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_GREAT_BEHEMOTH" />
+			<h5 class="caption">BRUTE BEASTS</h5>
+			<p>Goat, Hare, Monkey, Camel, Llama, Mule, Boar, Ox, Stag, Goat Giant, Horse, Chimpanzee, Aurochs, Gorilla, Giraffe, Boar Giant, Stag Giant, Hippopotamus, Rhinoceros, Elephant, Sloth Giant, Gorilla Giant, Mammoth.</p>
+		</description>
+		<sheet display="false"><description>A Shifter Bloodline connected to brute beasts.</description></sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_BRUTE_SHAPES" level="2" />
+			<grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_PRIMAL_FORTITUDE" level="2" />
+			<grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_RESILIENT_HIDE" level="7" />
+			<grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_STAMPEDE" level="13" />
+			<grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_GREAT_BEHEMOTH" level="18" />
+		</rules>
+	</element>
+
+	<element name="Brute Shapes" type="Archetype Feature" source="laserllama's Shifter" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_BRUTE_SHAPES">
+		<description><p>All Beasts with the Brute creature subtype are considered Bloodline Shapes for you.</p></description>
+		<sheet><description>All Beasts with the Brute creature subtype are Bloodline Shapes for you.</description></sheet>
+	</element>
+	<element name="Primal Fortitude" type="Archetype Feature" source="laserllama's Shifter" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_PRIMAL_FORTITUDE">
+		<description><p>Your hit point maximum increases by 2, and it increases by 1 again whenever you gain a Shifter level. You also add your normal form's Constitution modifier to all Strength ability checks and Strength saving throws.</p></description>
+		<sheet><description>Your hit point maximum increases by 2, and by 1 whenever you gain a Shifter level. Add your normal form's CON modifier to all STR checks and STR saves.</description></sheet>
+		<rules>
+			<stat name="hp" value="2" />
+			<stat name="hp" value="level:shifter" />
+		</rules>
+	</element>
+	<element name="Resilient Hide" type="Archetype Feature" source="laserllama's Shifter" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_RESILIENT_HIDE">
+		<description><p>If you begin your turn in one of your Bloodline Shapes, you gain temporary hit points equal to the Beast's Constitution modifier, which last as long as you remain in that Shape. Whenever you have temporary hit points, you are resistant to all bludgeoning, piercing, and slashing damage.</p></description>
+		<sheet><description>If you begin your turn in a Bloodline Shape, gain temporary HP equal to the Beast's CON modifier while you remain in that Shape. While you have temporary HP, you resist bludgeoning, piercing, and slashing damage.</description></sheet>
+	</element>
+	<element name="Stampede" type="Archetype Feature" source="laserllama's Shifter" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_STAMPEDE">
+		<description><p>As an action, you can move up to your full speed in a straight line, forcing creatures you pass through to make a Strength saving throw against your Shifter save DC. On a failed save, they take bludgeoning damage based on your size and, if the target is smaller than you, it falls Prone. On a success, your movement immediately stops, and the target takes half damage.</p><p class="indent">Damage: Tiny 1d12, Small 2d12, Medium 3d12, Large 4d12, Huge 5d12, Gargantuan 6d12.</p></description>
+		<sheet action="Action"><description>Move up to your full speed in a straight line. Creatures you pass through make a STR save against your Shifter DC. Failure: bludgeoning damage by your size, and smaller targets fall Prone. Success: your movement stops and the target takes half damage.</description></sheet>
+	</element>
+	<element name="Great Behemoth" type="Archetype Feature" source="laserllama's Shifter" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_GREAT_BEHEMOTH">
+		<description><p>When you use Primeval Form, you can choose for the Beast Shape to become a Great Behemoth. It becomes Huge if it was not already, creatures smaller than Huge have disadvantage on saves against Stampede, its Natural Weapon attacks deal a bonus 1d12 damage, and it is resistant to all damage except force and psychic. Once you use this feature, you must finish a short or long rest before you can use your Great Behemoth form again.</p></description>
+		<sheet usage="1/Short Rest"><description>When you use Primeval Form, your Beast Shape can become a Great Behemoth: Huge size, smaller creatures have disadvantage against Stampede, +1d12 Natural Weapon damage, and resistance to all damage except force and psychic.</description></sheet>
+	</element>
+
+	<element name="Carnivore Bloodline" type="Archetype" source="laserllama's Shifter" id="ID_LASERLL_ARCHETYPE_SHIFTER_CARNIVORE">
+		<supports>Shifter Bloodline</supports>
+		<description>
+			<p>In your veins flows the blood of a primeval hunter. Carnivore Shifters take on the shapes of savage predatory Beasts.</p>
+			<div element="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_CARNIVORE_SHAPES" />
+			<div element="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_PREY_DRIVE" />
+			<div element="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_PREDATORY_INSTINCT" />
+			<div element="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_BESTIAL_BLOODLUST" />
+			<div element="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_APEX_PREDATOR" />
+			<div element="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_PRIMEVAL_FRENZY" />
+			<h5 class="caption">CARNIVORE BEASTS</h5>
+			<p>Cat, Fox, Hunting Dog, Wild Dog, Panther, Wolf, Black Bear, Cheetah, Dire Wolf, Lion, Tiger, Wild Dog Giant, Grizzly Bear, Polar Bear, Saber-Toothed Tiger, Cave Bear, Dire Tiger, Cave Bear Giant.</p>
+		</description>
+		<sheet display="false"><description>A Shifter Bloodline connected to carnivore beasts.</description></sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_CARNIVORE_SHAPES" level="2" />
+			<grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_PREY_DRIVE" level="2" />
+			<grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_PREDATORY_INSTINCT" level="2" />
+			<grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_BESTIAL_BLOODLUST" level="7" />
+			<grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_APEX_PREDATOR" level="13" />
+			<grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_PRIMEVAL_FRENZY" level="18" />
+		</rules>
+	</element>
+
+	<element name="Carnivore Shapes" type="Archetype Feature" source="laserllama's Shifter" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_CARNIVORE_SHAPES">
+		<description><p>Beasts with the Carnivore creature subtype are considered Bloodline Shapes for you.</p></description>
+		<sheet><description>Beasts with the Carnivore creature subtype are Bloodline Shapes for you.</description></sheet>
+	</element>
+	<element name="Prey Drive" type="Archetype Feature" source="laserllama's Shifter" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_PREY_DRIVE">
+		<description><p>As a bonus action, you can mark one hostile creature you can see as your Prey. If your Prey has less than half its maximum hit points and you can see, hear, or smell it, you have advantage on the first Natural Weapon attack you make against it each turn and your speed increases by 10 feet. However, you have disadvantage on attacks against all other targets. The creature remains your Prey until it is dead, you cannot see, hear, or smell it for 1 hour, or you are Incapacitated. You can only have one creature marked as your Prey at a time.</p></description>
+		<sheet action="Bonus Action"><description>Mark one hostile creature you can see as your Prey. If it has less than half max HP and you can sense it, you have advantage on the first Natural Weapon attack against it each turn and your speed increases by 10 feet, but attacks against other targets have disadvantage.</description></sheet>
+	</element>
+	<element name="Predatory Instinct" type="Archetype Feature" source="laserllama's Shifter" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_PREDATORY_INSTINCT">
+		<description><p>You gain proficiency in either Perception, Insight, or Survival. When you make an ability check related to your Prey using those skills, you can treat a d20 roll of 7 or lower as an 8.</p></description>
+		<sheet><description>Gain proficiency in Perception, Insight, or Survival. When making a check related to your Prey using those skills, treat a d20 roll of 7 or lower as an 8.</description></sheet>
+		<rules>
+			<select type="Proficiency" name="Predatory Instinct Skill" supports="ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_SURVIVAL" number="1" />
+		</rules>
+	</element>
+	<element name="Bestial Bloodlust" type="Archetype Feature" source="laserllama's Shifter" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_BESTIAL_BLOODLUST">
+		<description><p>While your Prey Drive is active, you have advantage on Natural Weapon attacks against your Prey and you cannot be Grappled, Paralyzed, or Restrained. You can also mark a creature as your Prey after you spend an action studying signs of its passing that it left within the past 24 hours.</p></description>
+		<sheet><description>While Prey Drive is active, you have advantage on Natural Weapon attacks against your Prey and cannot be Grappled, Paralyzed, or Restrained. You can mark a creature as Prey after studying signs it left within 24 hours.</description></sheet>
+	</element>
+	<element name="Apex Predator" type="Archetype Feature" source="laserllama's Shifter" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_APEX_PREDATOR">
+		<description><p>Whenever your Prey forces you to make an ability check or saving throw, you have advantage on your roll. You also gain the benefits from Prey Drive whenever your Prey has less than its maximum hit points.</p></description>
+		<sheet><description>Whenever your Prey forces an ability check or saving throw, you have advantage. You gain Prey Drive benefits whenever your Prey has less than its maximum HP.</description></sheet>
+	</element>
+	<element name="Primeval Frenzy" type="Archetype Feature" source="laserllama's Shifter" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_PRIMEVAL_FRENZY">
+		<description><p>While under the effects of Prey Drive, falling to 0 hit points does not knock you Unconscious, and you can gain temporary hit points at 0 hit points. In this state, you make death saving throws as normal and suffer the effects of taking damage at 0 hit points. If you start your turn and have three death saving throw failures, you must succeed on a Constitution saving throw, DC 10, or die. Each subsequent round you make this saving throw, the DC increases by 5. The DC resets to 10 if you regain hit points.</p></description>
+		<sheet><description>While under Prey Drive, falling to 0 HP does not knock you Unconscious, and you can gain temporary HP at 0 HP. You still make death saves and suffer the effects of taking damage at 0 HP.</description></sheet>
+	</element>
+
+	<element name="Reptilian Bloodline" type="Archetype" source="laserllama's Shifter" id="ID_LASERLL_ARCHETYPE_SHIFTER_REPTILIAN">
+		<supports>Shifter Bloodline</supports>
+		<description>
+			<p>Your blood carries the memories of ancient scales and claws.</p>
+			<div element="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_REPTILIAN_SHAPES" />
+			<div element="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_REPTILIAN_PHYSIOLOGY" />
+			<div element="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_VENOMOUS_STRIKE" />
+			<div element="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_ADAPTIVE_CAMOUFLAGE" />
+			<div element="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_PRIMAL_VENOM" />
+			<div element="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_COILED_STRIKE" />
+			<div element="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_PRIMEVAL_TOXIN" />
+			<h5 class="caption">REPTILIAN BEASTS</h5>
+			<p>Frog, Lizard, Tortoise, Alligator Turtle, Viper, Boa Constrictor, Frog Giant, Lizard Giant, Komodo Dragon, Tortoise Giant, Crocodile, King Cobra, Toad Giant, Anaconda, Alligator Turtle Giant, Toad Colossal, Titanoboa, Crocodile Giant.</p>
+		</description>
+		<sheet display="false"><description>A Shifter Bloodline connected to reptilian beasts.</description></sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_REPTILIAN_SHAPES" level="2" />
+			<grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_REPTILIAN_PHYSIOLOGY" level="2" />
+			<grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_VENOMOUS_STRIKE" level="2" />
+			<grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_ADAPTIVE_CAMOUFLAGE" level="7" />
+			<grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_PRIMAL_VENOM" level="7" />
+			<grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_COILED_STRIKE" level="13" />
+			<grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_PRIMEVAL_TOXIN" level="18" />
+		</rules>
+	</element>
+
+	<element name="Reptilian Shapes" type="Archetype Feature" source="laserllama's Shifter" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_REPTILIAN_SHAPES">
+		<description><p>Beasts with the Reptilian creature subtype are considered Bloodline Shapes for you.</p></description>
+		<sheet><description>Beasts with the Reptilian creature subtype are Bloodline Shapes for you.</description></sheet>
+	</element>
+	<element name="Reptilian Physiology" type="Archetype Feature" source="laserllama's Shifter" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_REPTILIAN_PHYSIOLOGY">
+		<description><p>You gain a climbing and swimming speed equal to your walking speed. You can also take the Disengage action as a bonus action on each of your turns. You retain these benefits in your Bloodline Shapes.</p></description>
+		<sheet action="Bonus Action"><description>You gain climbing and swimming speed equal to walking speed. You can Disengage as a bonus action. You retain these benefits in Bloodline Shapes.</description></sheet>
+		<rules>
+			<stat name="speed:climb" value="speed" bonus="base" />
+			<stat name="speed:swim" value="speed" bonus="base" />
+		</rules>
+	</element>
+	<element name="Venomous Strike" type="Archetype Feature" source="laserllama's Shifter" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_VENOMOUS_STRIKE">
+		<description><p>When you hit a creature with a Natural Weapon attack, you can force it to make a Constitution saving throw against your Shifter save DC. On a failure, it takes poison damage equal to 1d8 + your Shifter level and is Poisoned. On a successful save, the creature takes half damage and is not Poisoned. A Poisoned creature repeats this saving throw at the end of each of its turns. On a successful save, it is no longer Poisoned. On a failed save, it takes an additional 1d8 poison damage. You can use this feature a number of times equal to your normal form's Constitution modifier, minimum once. You regain one expended use when you finish a short rest, and all expended uses when you finish a long rest.</p></description>
+		<sheet usage="CON mod/Long Rest"><description>When you hit with a Natural Weapon, force a CON save against your Shifter DC. Failure: 1d8 + Shifter level poison damage and Poisoned. Success: half damage and not Poisoned. Poisoned target repeats the save at end of turns, taking 1d8 poison on failure. Regain 1 use on short rest.</description></sheet>
+	</element>
+	<element name="Adaptive Camouflage" type="Archetype Feature" source="laserllama's Shifter" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_ADAPTIVE_CAMOUFLAGE">
+		<description><p>As an action, you can expend one use of Adrenaline Surge to turn invisible for 10 minutes, as if by the invisibility spell. Unlike the spell, this ability does not require concentration.</p></description>
+		<sheet action="Action"><description>Expend one use of Adrenaline Surge to turn invisible for 10 minutes, as if by invisibility, without concentration.</description></sheet>
+	</element>
+	<element name="Primal Venom" type="Archetype Feature" source="laserllama's Shifter" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_PRIMAL_VENOM">
+		<description><p>Whenever you deal poison damage to a creature with one of your Shifter or Beast Shape features, you can choose to deal necrotic damage instead.</p></description>
+		<sheet><description>Whenever you deal poison damage with a Shifter or Beast Shape feature, you can deal necrotic damage instead.</description></sheet>
+	</element>
+	<element name="Coiled Strike" type="Archetype Feature" source="laserllama's Shifter" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_COILED_STRIKE">
+		<description><p>When a creature you can see within your reach misses you with an attack, you can use your reaction to make a single Natural Weapon attack against that creature. If this special reaction attack hits and you use Venomous Strike, the creature has disadvantage on its initial saving throw to resist the effects of your Venomous Strike.</p></description>
+		<sheet action="Reaction"><description>When a creature you can see within reach misses you, make one Natural Weapon attack against it. If you hit and use Venomous Strike, it has disadvantage on the initial save.</description></sheet>
+	</element>
+	<element name="Primeval Toxin" type="Archetype Feature" source="laserllama's Shifter" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_PRIMEVAL_TOXIN">
+		<description><p>Whenever you force a target to make a saving throw to resist being Poisoned, you can change it to an Intelligence saving throw, and on a failure, it is Paralyzed instead of Poisoned.</p></description>
+		<sheet><description>Whenever you force a target to save against being Poisoned, you can make it an Intelligence save instead. On failure, it is Paralyzed instead of Poisoned.</description></sheet>
+	</element>
+</elements>
