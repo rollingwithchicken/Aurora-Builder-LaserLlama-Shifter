@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Shifter</name>
-		<update version="1.0.0">
+		<update version="1.0.1">
 			<file name="class-shifter.xml" url="https://raw.githubusercontent.com/rmurgasa/Aurora-Builder-LaserLlama-Shifter/main/class-shifter.xml" />
 		</update>
 	</info>
@@ -138,14 +138,14 @@
 			<p class="indent"><strong>Natural Weapons.</strong> Your unarmed strikes with these Natural Weapons deal 1d8 bludgeoning, piercing, or slashing damage on hit, and you use either Strength or Dexterity for their attack and damage rolls.</p>
 		</description>
 		<sheet>
-			<description>Keen Senses: advantage on Wisdom checks based on hearing, sight, or smell. Natural Armor: when not wearing armor or a shield, your AC is {shifter:natural armor}. Natural Weapons: unarmed strikes deal 1d8 bludgeoning, piercing, or slashing damage, using STR or DEX.</description>
+			<description>Keen Senses: advantage on Wisdom checks based on hearing, sight, or smell. Natural Armor: when not wearing armor or a shield, your AC is {{ac:natural armor shifter}}. Natural Weapons: unarmed strikes deal 1d8 bludgeoning, piercing, or slashing damage, using STR or DEX.</description>
 		</sheet>
 		<rules>
-			<stat name="shifter:natural armor:base" value="13" />
-			<stat name="shifter:natural armor:constitution" value="constitution:modifier" />
-			<stat name="shifter:natural armor" value="shifter:natural armor:base" />
-			<stat name="shifter:natural armor" value="shifter:natural armor:constitution" />
-			<stat name="ac:calculation" value="shifter:natural armor" bonus="calculation" equipped="[armor:none],[shield:none]" alt="Natural Armor (Shifter)" />
+			<stat name="ac:natural armor shifter:base" value="13" />
+			<stat name="ac:natural armor shifter:constitution" value="constitution:modifier" />
+			<stat name="ac:natural armor shifter" value="ac:natural armor shifter:base" />
+			<stat name="ac:natural armor shifter" value="ac:natural armor shifter:constitution" />
+			<stat name="ac:calculation" value="ac:natural armor shifter" bonus="calculation" equipped="[armor:none],[shield:none]" alt="Natural Armor (Shifter)" />
 		</rules>
 	</element>
 
@@ -155,7 +155,7 @@
 			<p class="indent">Whenever you make an ability check to soothe a wild Beast, such as with a Wisdom (Animal Handling) check, you can add your Shifter level to the result of your roll.</p>
 		</description>
 		<sheet>
-			<description>You can verbally communicate with and understand Beasts. Add {level:shifter} to ability checks to soothe a wild Beast.</description>
+			<description>You can verbally communicate with and understand Beasts. Add {{level:shifter}} to ability checks to soothe a wild Beast.</description>
 		</sheet>
 	</element>
 
@@ -192,7 +192,7 @@
 			</table>
 		</description>
 		<sheet action="Bonus Action">
-			<description>You can Shift into a Beast Shape you know of CR {shifter:wild shape:cr} or lower. Shifter save DC = {shifter:dc}. You retain alignment, personality, hit points, and INT, WIS, and CHA. You revert if Incapacitated, if you use a bonus action, or after 1 hour without returning to normal form.</description>
+			<description>You can Shift into a Beast Shape you know of CR {{shifter:wild shape:cr}} or lower. Shifter save DC = {{shifter:dc}}. You retain alignment, personality, hit points, and INT, WIS, and CHA. You revert if Incapacitated, if you use a bonus action, or after 1 hour without returning to normal form.</description>
 		</sheet>
 		<rules>
 			<stat name="shifter:wild shape:cr" value="0.5" level="2" bonus="base" />
@@ -256,7 +256,7 @@
 			<p>Starting at 6th level, whenever you take damage, you can use a reaction to gain temporary hit points equal to the damage taken. These temporary hit points last for 1 minute.</p>
 			<p class="indent">You can use this reaction a number of times equal to your normal form's Constitution modifier, minimum once. You regain all uses at the end of each short or long rest.</p>
 		</description>
-		<sheet action="Reaction" usage="CON mod/Short Rest">
+		<sheet action="Reaction" usage="{{constitution:modifier}}/Short Rest">
 			<description>When you take damage, gain temporary hit points equal to the damage taken. These temporary hit points last for 1 minute.</description>
 		</sheet>
 	</element>
@@ -275,7 +275,7 @@
 			<p>Beginning at 10th level, when you fail a saving throw, you can expend a use of Adrenaline Surge to add your normal form's Constitution modifier, minimum +1, to your roll, possibly turning a failure into a success.</p>
 		</description>
 		<sheet>
-			<description>When you fail a saving throw, expend one Adrenaline Surge use to add your normal form's CON modifier to the roll, possibly turning a failure into a success.</description>
+			<description>When you fail a saving throw, expend one Adrenaline Surge use to add your normal form's CON modifier ({{constitution:modifier}}) to the roll, possibly turning a failure into a success.</description>
 		</sheet>
 	</element>
 
@@ -370,11 +370,11 @@
 	</element>
 	<element name="Buffeting Winds" type="Archetype Feature" source="laserllama's Shifter" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_BUFFETING_WINDS">
 		<description><p>When you have a flying speed, you can use your bonus action to buffet enemies with the wind. Choose an adjacent 20-foot cone, a 30-foot by 5-foot line, or the area within a 10-foot radius of you. Creatures in that area must make a Strength saving throw against your Shifter save DC. On a failure, they are thrown 20 feet away from you in a straight line. The distance is halved for each size the creature is larger than you.</p></description>
-		<sheet action="Bonus Action"><description>When you have a flying speed, force creatures in an adjacent 20-foot cone, 30-foot by 5-foot line, or 10-foot radius to make a STR save against your Shifter DC. On failure, they are thrown 20 feet away from you. Distance is halved for each size larger than you.</description></sheet>
+		<sheet action="Bonus Action"><description>When you have a flying speed, force creatures in an adjacent 20-foot cone, 30-foot by 5-foot line, or 10-foot radius to make a STR save against your Shifter DC ({{shifter:dc}}). On failure, they are thrown 20 feet away from you. Distance is halved for each size larger than you.</description></sheet>
 	</element>
 	<element name="Master of the Winds" type="Archetype Feature" source="laserllama's Shifter" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_MASTER_OF_THE_WINDS">
 		<description><p>As a bonus action, you can use Buffeting Winds to create the effect of the whirlwind spell in a space adjacent to you. This effect uses your Shifter save DC, does not require concentration, and you are immune to its effects. As a bonus action, you can use Buffeting Winds to move the whirlwind up to 30 feet so long as you are adjacent to it. Once you use this feature, you must finish a short or long rest before you can conjure another whirlwind.</p></description>
-		<sheet action="Bonus Action" usage="1/Short Rest"><description>Use Buffeting Winds to create a whirlwind adjacent to you. It uses your Shifter DC, does not require concentration, and you are immune. As a bonus action, move it up to 30 feet while adjacent to it.</description></sheet>
+		<sheet action="Bonus Action" usage="1/Short Rest"><description>Use Buffeting Winds to create a whirlwind adjacent to you. It uses your Shifter DC ({{shifter:dc}}), does not require concentration, and you are immune. As a bonus action, move it up to 30 feet while adjacent to it.</description></sheet>
 	</element>
 
 	<element name="Brute Bloodline" type="Archetype" source="laserllama's Shifter" id="ID_LASERLL_ARCHETYPE_SHIFTER_BRUTE">
@@ -405,7 +405,7 @@
 	</element>
 	<element name="Primal Fortitude" type="Archetype Feature" source="laserllama's Shifter" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_PRIMAL_FORTITUDE">
 		<description><p>Your hit point maximum increases by 2, and it increases by 1 again whenever you gain a Shifter level. You also add your normal form's Constitution modifier to all Strength ability checks and Strength saving throws.</p></description>
-		<sheet><description>Your hit point maximum increases by 2, and by 1 whenever you gain a Shifter level. Add your normal form's CON modifier to all STR checks and STR saves.</description></sheet>
+		<sheet><description>Your hit point maximum increases by 2, and by 1 whenever you gain a Shifter level. Add your normal form's CON modifier ({{constitution:modifier}}) to all STR checks and STR saves.</description></sheet>
 		<rules>
 			<stat name="hp" value="2" />
 			<stat name="hp" value="level:shifter" />
@@ -417,7 +417,7 @@
 	</element>
 	<element name="Stampede" type="Archetype Feature" source="laserllama's Shifter" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_STAMPEDE">
 		<description><p>As an action, you can move up to your full speed in a straight line, forcing creatures you pass through to make a Strength saving throw against your Shifter save DC. On a failed save, they take bludgeoning damage based on your size and, if the target is smaller than you, it falls Prone. On a success, your movement immediately stops, and the target takes half damage.</p><p class="indent">Damage: Tiny 1d12, Small 2d12, Medium 3d12, Large 4d12, Huge 5d12, Gargantuan 6d12.</p></description>
-		<sheet action="Action"><description>Move up to your full speed in a straight line. Creatures you pass through make a STR save against your Shifter DC. Failure: bludgeoning damage by your size, and smaller targets fall Prone. Success: your movement stops and the target takes half damage.</description></sheet>
+		<sheet action="Action"><description>Move up to your full speed in a straight line. Creatures you pass through make a STR save against your Shifter DC ({{shifter:dc}}). Failure: bludgeoning damage by your size, and smaller targets fall Prone. Success: your movement stops and the target takes half damage.</description></sheet>
 	</element>
 	<element name="Great Behemoth" type="Archetype Feature" source="laserllama's Shifter" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_GREAT_BEHEMOTH">
 		<description><p>When you use Primeval Form, you can choose for the Beast Shape to become a Great Behemoth. It becomes Huge if it was not already, creatures smaller than Huge have disadvantage on saves against Stampede, its Natural Weapon attacks deal a bonus 1d12 damage, and it is resistant to all damage except force and psychic. Once you use this feature, you must finish a short or long rest before you can use your Great Behemoth form again.</p></description>
@@ -516,7 +516,7 @@
 	</element>
 	<element name="Venomous Strike" type="Archetype Feature" source="laserllama's Shifter" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_VENOMOUS_STRIKE">
 		<description><p>When you hit a creature with a Natural Weapon attack, you can force it to make a Constitution saving throw against your Shifter save DC. On a failure, it takes poison damage equal to 1d8 + your Shifter level and is Poisoned. On a successful save, the creature takes half damage and is not Poisoned. A Poisoned creature repeats this saving throw at the end of each of its turns. On a successful save, it is no longer Poisoned. On a failed save, it takes an additional 1d8 poison damage. You can use this feature a number of times equal to your normal form's Constitution modifier, minimum once. You regain one expended use when you finish a short rest, and all expended uses when you finish a long rest.</p></description>
-		<sheet usage="CON mod/Long Rest"><description>When you hit with a Natural Weapon, force a CON save against your Shifter DC. Failure: 1d8 + Shifter level poison damage and Poisoned. Success: half damage and not Poisoned. Poisoned target repeats the save at end of turns, taking 1d8 poison on failure. Regain 1 use on short rest.</description></sheet>
+		<sheet usage="{{constitution:modifier}}/Long Rest"><description>When you hit with a Natural Weapon, force a CON save against your Shifter DC ({{shifter:dc}}). Failure: 1d8 + {{level:shifter}} poison damage and Poisoned. Success: half damage and not Poisoned. Poisoned target repeats the save at end of turns, taking 1d8 poison on failure. Regain 1 use on short rest.</description></sheet>
 	</element>
 	<element name="Adaptive Camouflage" type="Archetype Feature" source="laserllama's Shifter" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_ADAPTIVE_CAMOUFLAGE">
 		<description><p>As an action, you can expend one use of Adrenaline Surge to turn invisible for 10 minutes, as if by the invisibility spell. Unlike the spell, this ability does not require concentration.</p></description>
