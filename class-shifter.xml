@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Shifter</name>
-		<update version="1.0.1">
+		<update version="1.0.4">
 			<file name="class-shifter.xml" url="https://raw.githubusercontent.com/rmurgasa/Aurora-Builder-LaserLlama-Shifter/main/class-shifter.xml" />
 		</update>
 	</info>
@@ -138,7 +138,7 @@
 			<p class="indent"><strong>Natural Weapons.</strong> Your unarmed strikes with these Natural Weapons deal 1d8 bludgeoning, piercing, or slashing damage on hit, and you use either Strength or Dexterity for their attack and damage rolls.</p>
 		</description>
 		<sheet>
-			<description>Keen Senses: advantage on Wisdom checks based on hearing, sight, or smell. Natural Armor: when not wearing armor or a shield, your AC is {{ac:natural armor shifter}}. Natural Weapons: unarmed strikes deal 1d8 bludgeoning, piercing, or slashing damage, using STR or DEX.</description>
+			<description>Keen Senses. When you make a Wisdom ability check based on hearing, sight, or smell, you have advantage on the roll. Natural Armor. So long as you are not wearing armor or a shield, your AC is {{ac:natural armor shifter}} unless another AC would be higher. Natural Weapons. Your unarmed strikes deal 1d8 bludgeoning, piercing, or slashing damage, and you use either Strength or Dexterity for their attack and damage rolls.</description>
 		</sheet>
 		<rules>
 			<stat name="ac:natural armor shifter:base" value="13" />
@@ -155,7 +155,7 @@
 			<p class="indent">Whenever you make an ability check to soothe a wild Beast, such as with a Wisdom (Animal Handling) check, you can add your Shifter level to the result of your roll.</p>
 		</description>
 		<sheet>
-			<description>You can verbally communicate with and understand Beasts. Add {{level:shifter}} to ability checks to soothe a wild Beast.</description>
+			<description>You can verbally communicate with and understand Beasts. This does not make Beasts automatically friendly, and a Beast's awareness and ability to recall knowledge are limited by its Intelligence. Whenever you make an ability check to soothe a wild Beast, such as a Wisdom (Animal Handling) check, add your Shifter level ({{level:shifter}}) to the roll.</description>
 		</sheet>
 	</element>
 
@@ -164,8 +164,8 @@
 			<p>At 2nd level, you choose a Bloodline that best represents your primal abilities and connection to wild animals: Avian, Brute, Carnivore, or Reptilian. Your Bloodline grants you features at 2nd, 7th, 13th, and 18th levels.</p>
 			<p class="indent">Each Shifter Bloodline has a deep connection to certain types of Beast, known as Bloodline Shapes. Any Beast Shapes you instinctively learn are limited to these Bloodline Shapes.</p>
 		</description>
-		<sheet display="false">
-			<description>Choose a Shifter Bloodline.</description>
+		<sheet>
+			<description>You choose a Bloodline that represents your primal abilities and connection to wild animals. Your Bloodline grants features at 2nd, 7th, 13th, and 18th level.</description>
 		</sheet>
 		<rules>
 			<select type="Archetype" name="Shifter Bloodline" supports="Shifter Bloodline" />
@@ -192,7 +192,10 @@
 			</table>
 		</description>
 		<sheet action="Bonus Action">
-			<description>You can Shift into a Beast Shape you know of CR {{shifter:wild shape:cr}} or lower. Shifter save DC = {{shifter:dc}}. You retain alignment, personality, hit points, and INT, WIS, and CHA. You revert if Incapacitated, if you use a bonus action, or after 1 hour without returning to normal form.</description>
+			<description>You know two Beast Shapes of CR 1/2 or lower, both of which must be Bloodline Shapes. As a bonus action, you can Shift into one Beast Shape that you know. Your current Max CR is {{shifter:wild shape:cr}}.
+			While Shifted, your game statistics are replaced by the Beast's statistics, but you retain your alignment, personality, hit points, and INT, WIS, and CHA. You retain your skill and saving throw proficiencies, and gain those of the Beast. If both apply, use the higher bonus.
+			You cannot cast spells in Beast Shape, but you can maintain concentration. You cannot use special senses unless the Beast Shape also has them. You cannot use Multiattack in Beast Shape until 5th level. You revert if Incapacitated, if you use a bonus action to do so, or after 1 hour without returning to normal form.
+			When one of your Beast Shapes forces a saving throw, use the DC in its stat block or your Shifter save DC. Your Shifter save DC is {{shifter:dc}}.</description>
 		</sheet>
 		<rules>
 			<stat name="shifter:wild shape:cr" value="0.5" level="2" bonus="base" />
@@ -213,7 +216,7 @@
 			<p>Beginning at 3rd level, so long as you are not Incapacitated or Surprised, you have advantage on all initiative rolls, and you can instantly Shift into one of your Beast Shapes when you roll initiative.</p>
 		</description>
 		<sheet>
-			<description>While not Incapacitated or Surprised, you have advantage on initiative rolls and can instantly Shift when you roll initiative.</description>
+			<description>So long as you are not Incapacitated or Surprised, you have advantage on initiative rolls, and you can instantly Shift into one of your Beast Shapes when you roll initiative.</description>
 		</sheet>
 	</element>
 
@@ -238,7 +241,7 @@
 			<p class="indent">Whenever you take the Dash or Disengage action, you can make a Natural Weapon attack as a bonus action.</p>
 		</description>
 		<sheet>
-			<description>When you take the Attack action in normal form, you can make two attacks. You can take Multiattack in Beast Shape if the Beast Shape has it. When you Dash or Disengage, you can make a Natural Weapon attack as a bonus action.</description>
+			<description>Whenever you take the Attack action in your normal form, you can make two attacks instead of one. You can also take the Multiattack action while in Beast Shape if your Beast Shape has that action. Whenever you take the Dash or Disengage action, you can make a Natural Weapon attack as a bonus action.</description>
 		</sheet>
 	</element>
 
@@ -247,7 +250,7 @@
 			<p>At 5th level, your Natural Weapon attacks, in both your normal form and Beast Shapes, count as magical for overcoming resistances and immunities. You can also use the attack bonus of your normal form's Natural Weapon attacks whenever you are in Beast Shape, unless your Beast Shape's attack bonus would be higher.</p>
 		</description>
 		<sheet>
-			<description>Your Natural Weapon attacks in normal form and Beast Shapes count as magical. You can use your normal form Natural Weapon attack bonus in Beast Shape unless the Beast Shape's attack bonus is higher.</description>
+			<description>Your Natural Weapon attacks, in both your normal form and Beast Shapes, count as magical for overcoming resistance and immunity. You can also use the attack bonus of your normal form's Natural Weapon attacks while in Beast Shape, unless the Beast Shape's attack bonus would be higher.</description>
 		</sheet>
 	</element>
 
@@ -256,8 +259,8 @@
 			<p>Starting at 6th level, whenever you take damage, you can use a reaction to gain temporary hit points equal to the damage taken. These temporary hit points last for 1 minute.</p>
 			<p class="indent">You can use this reaction a number of times equal to your normal form's Constitution modifier, minimum once. You regain all uses at the end of each short or long rest.</p>
 		</description>
-		<sheet action="Reaction" usage="{{constitution:modifier}}/Short Rest">
-			<description>When you take damage, gain temporary hit points equal to the damage taken. These temporary hit points last for 1 minute.</description>
+		<sheet action="Reaction" usage="CON mod/Short Rest">
+			<description>Whenever you take damage, you can use your reaction to gain temporary hit points equal to the damage taken. These temporary hit points last for 1 minute.</description>
 		</sheet>
 	</element>
 
@@ -275,7 +278,7 @@
 			<p>Beginning at 10th level, when you fail a saving throw, you can expend a use of Adrenaline Surge to add your normal form's Constitution modifier, minimum +1, to your roll, possibly turning a failure into a success.</p>
 		</description>
 		<sheet>
-			<description>When you fail a saving throw, expend one Adrenaline Surge use to add your normal form's CON modifier ({{constitution:modifier}}) to the roll, possibly turning a failure into a success.</description>
+			<description>When you fail a saving throw, you can expend one use of Adrenaline Surge to add your normal form's Constitution modifier (minimum +1) to the roll, possibly turning a failure into a success.</description>
 		</sheet>
 	</element>
 
@@ -300,7 +303,7 @@
 			<p>Starting at 14th level, you cannot have disadvantage on any attack roll you make that targets a creature within 30 feet.</p>
 		</description>
 		<sheet>
-			<description>You cannot have disadvantage on attack rolls against creatures within 30 feet.</description>
+			<description>You cannot have disadvantage on any attack roll you make that targets a creature within 30 feet.</description>
 		</sheet>
 	</element>
 
@@ -355,7 +358,7 @@
 
 	<element name="Avian Shapes" type="Archetype Feature" source="laserllama's Shifter" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_AVIAN_SHAPES">
 		<description><p>All Beasts with the Avian creature subtype are considered Bloodline Shapes for you.</p></description>
-		<sheet><description>All Beasts with the Avian creature subtype are Bloodline Shapes for you.</description></sheet>
+		<sheet><description>All Beasts with the Avian creature subtype are Bloodline Shapes for you. Beast Shapes you instinctively learn from Shifter level progression must be Bloodline Shapes. You can also learn Beast Shapes from any Bloodline by touching a living, non-hostile Beast of a CR no higher than your Max CR.</description></sheet>
 	</element>
 	<element name="Swift Wing" type="Archetype Feature" source="laserllama's Shifter" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_SWIFT_WING">
 		<description><p>When you are in your normal form or a Bloodline Shape, you can take the Dash action as a bonus action on your turn. When you do so, opportunity attacks against you are made with disadvantage until the end of your current turn.</p></description>
@@ -370,11 +373,11 @@
 	</element>
 	<element name="Buffeting Winds" type="Archetype Feature" source="laserllama's Shifter" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_BUFFETING_WINDS">
 		<description><p>When you have a flying speed, you can use your bonus action to buffet enemies with the wind. Choose an adjacent 20-foot cone, a 30-foot by 5-foot line, or the area within a 10-foot radius of you. Creatures in that area must make a Strength saving throw against your Shifter save DC. On a failure, they are thrown 20 feet away from you in a straight line. The distance is halved for each size the creature is larger than you.</p></description>
-		<sheet action="Bonus Action"><description>When you have a flying speed, force creatures in an adjacent 20-foot cone, 30-foot by 5-foot line, or 10-foot radius to make a STR save against your Shifter DC ({{shifter:dc}}). On failure, they are thrown 20 feet away from you. Distance is halved for each size larger than you.</description></sheet>
+		<sheet action="Bonus Action"><description>When you have a flying speed, force creatures in an adjacent 20-foot cone, 30-foot by 5-foot line, or 10-foot radius to make a STR save against your Shifter DC. On failure, they are thrown 20 feet away from you. Distance is halved for each size larger than you.</description></sheet>
 	</element>
 	<element name="Master of the Winds" type="Archetype Feature" source="laserllama's Shifter" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_MASTER_OF_THE_WINDS">
 		<description><p>As a bonus action, you can use Buffeting Winds to create the effect of the whirlwind spell in a space adjacent to you. This effect uses your Shifter save DC, does not require concentration, and you are immune to its effects. As a bonus action, you can use Buffeting Winds to move the whirlwind up to 30 feet so long as you are adjacent to it. Once you use this feature, you must finish a short or long rest before you can conjure another whirlwind.</p></description>
-		<sheet action="Bonus Action" usage="1/Short Rest"><description>Use Buffeting Winds to create a whirlwind adjacent to you. It uses your Shifter DC ({{shifter:dc}}), does not require concentration, and you are immune. As a bonus action, move it up to 30 feet while adjacent to it.</description></sheet>
+		<sheet action="Bonus Action" usage="1/Short Rest"><description>Use Buffeting Winds to create a whirlwind adjacent to you. It uses your Shifter DC, does not require concentration, and you are immune. As a bonus action, move it up to 30 feet while adjacent to it.</description></sheet>
 	</element>
 
 	<element name="Brute Bloodline" type="Archetype" source="laserllama's Shifter" id="ID_LASERLL_ARCHETYPE_SHIFTER_BRUTE">
@@ -401,11 +404,11 @@
 
 	<element name="Brute Shapes" type="Archetype Feature" source="laserllama's Shifter" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_BRUTE_SHAPES">
 		<description><p>All Beasts with the Brute creature subtype are considered Bloodline Shapes for you.</p></description>
-		<sheet><description>All Beasts with the Brute creature subtype are Bloodline Shapes for you.</description></sheet>
+		<sheet><description>All Beasts with the Brute creature subtype are Bloodline Shapes for you. Beast Shapes you instinctively learn from Shifter level progression must be Bloodline Shapes. You can also learn Beast Shapes from any Bloodline by touching a living, non-hostile Beast of a CR no higher than your Max CR.</description></sheet>
 	</element>
 	<element name="Primal Fortitude" type="Archetype Feature" source="laserllama's Shifter" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_PRIMAL_FORTITUDE">
 		<description><p>Your hit point maximum increases by 2, and it increases by 1 again whenever you gain a Shifter level. You also add your normal form's Constitution modifier to all Strength ability checks and Strength saving throws.</p></description>
-		<sheet><description>Your hit point maximum increases by 2, and by 1 whenever you gain a Shifter level. Add your normal form's CON modifier ({{constitution:modifier}}) to all STR checks and STR saves.</description></sheet>
+		<sheet><description>Your hit point maximum increases by 2, and it increases by 1 again whenever you gain a Shifter level. You also add your normal form's Constitution modifier ({{constitution:modifier}}) to all Strength ability checks and Strength saving throws.</description></sheet>
 		<rules>
 			<stat name="hp" value="2" />
 			<stat name="hp" value="level:shifter" />
@@ -417,7 +420,7 @@
 	</element>
 	<element name="Stampede" type="Archetype Feature" source="laserllama's Shifter" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_STAMPEDE">
 		<description><p>As an action, you can move up to your full speed in a straight line, forcing creatures you pass through to make a Strength saving throw against your Shifter save DC. On a failed save, they take bludgeoning damage based on your size and, if the target is smaller than you, it falls Prone. On a success, your movement immediately stops, and the target takes half damage.</p><p class="indent">Damage: Tiny 1d12, Small 2d12, Medium 3d12, Large 4d12, Huge 5d12, Gargantuan 6d12.</p></description>
-		<sheet action="Action"><description>Move up to your full speed in a straight line. Creatures you pass through make a STR save against your Shifter DC ({{shifter:dc}}). Failure: bludgeoning damage by your size, and smaller targets fall Prone. Success: your movement stops and the target takes half damage.</description></sheet>
+		<sheet action="Action"><description>Move up to your full speed in a straight line. Creatures you pass through make a STR save against your Shifter DC. Failure: bludgeoning damage by your size, and smaller targets fall Prone. Success: your movement stops and the target takes half damage.</description></sheet>
 	</element>
 	<element name="Great Behemoth" type="Archetype Feature" source="laserllama's Shifter" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_GREAT_BEHEMOTH">
 		<description><p>When you use Primeval Form, you can choose for the Beast Shape to become a Great Behemoth. It becomes Huge if it was not already, creatures smaller than Huge have disadvantage on saves against Stampede, its Natural Weapon attacks deal a bonus 1d12 damage, and it is resistant to all damage except force and psychic. Once you use this feature, you must finish a short or long rest before you can use your Great Behemoth form again.</p></description>
@@ -450,7 +453,7 @@
 
 	<element name="Carnivore Shapes" type="Archetype Feature" source="laserllama's Shifter" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_CARNIVORE_SHAPES">
 		<description><p>Beasts with the Carnivore creature subtype are considered Bloodline Shapes for you.</p></description>
-		<sheet><description>Beasts with the Carnivore creature subtype are Bloodline Shapes for you.</description></sheet>
+		<sheet><description>Beasts with the Carnivore creature subtype are Bloodline Shapes for you. Beast Shapes you instinctively learn from Shifter level progression must be Bloodline Shapes. You can also learn Beast Shapes from any Bloodline by touching a living, non-hostile Beast of a CR no higher than your Max CR.</description></sheet>
 	</element>
 	<element name="Prey Drive" type="Archetype Feature" source="laserllama's Shifter" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_PREY_DRIVE">
 		<description><p>As a bonus action, you can mark one hostile creature you can see as your Prey. If your Prey has less than half its maximum hit points and you can see, hear, or smell it, you have advantage on the first Natural Weapon attack you make against it each turn and your speed increases by 10 feet. However, you have disadvantage on attacks against all other targets. The creature remains your Prey until it is dead, you cannot see, hear, or smell it for 1 hour, or you are Incapacitated. You can only have one creature marked as your Prey at a time.</p></description>
@@ -504,7 +507,7 @@
 
 	<element name="Reptilian Shapes" type="Archetype Feature" source="laserllama's Shifter" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_REPTILIAN_SHAPES">
 		<description><p>Beasts with the Reptilian creature subtype are considered Bloodline Shapes for you.</p></description>
-		<sheet><description>Beasts with the Reptilian creature subtype are Bloodline Shapes for you.</description></sheet>
+		<sheet><description>Beasts with the Reptilian creature subtype are Bloodline Shapes for you. Beast Shapes you instinctively learn from Shifter level progression must be Bloodline Shapes. You can also learn Beast Shapes from any Bloodline by touching a living, non-hostile Beast of a CR no higher than your Max CR.</description></sheet>
 	</element>
 	<element name="Reptilian Physiology" type="Archetype Feature" source="laserllama's Shifter" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_REPTILIAN_PHYSIOLOGY">
 		<description><p>You gain a climbing and swimming speed equal to your walking speed. You can also take the Disengage action as a bonus action on each of your turns. You retain these benefits in your Bloodline Shapes.</p></description>
@@ -516,7 +519,7 @@
 	</element>
 	<element name="Venomous Strike" type="Archetype Feature" source="laserllama's Shifter" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_VENOMOUS_STRIKE">
 		<description><p>When you hit a creature with a Natural Weapon attack, you can force it to make a Constitution saving throw against your Shifter save DC. On a failure, it takes poison damage equal to 1d8 + your Shifter level and is Poisoned. On a successful save, the creature takes half damage and is not Poisoned. A Poisoned creature repeats this saving throw at the end of each of its turns. On a successful save, it is no longer Poisoned. On a failed save, it takes an additional 1d8 poison damage. You can use this feature a number of times equal to your normal form's Constitution modifier, minimum once. You regain one expended use when you finish a short rest, and all expended uses when you finish a long rest.</p></description>
-		<sheet usage="{{constitution:modifier}}/Long Rest"><description>When you hit with a Natural Weapon, force a CON save against your Shifter DC ({{shifter:dc}}). Failure: 1d8 + {{level:shifter}} poison damage and Poisoned. Success: half damage and not Poisoned. Poisoned target repeats the save at end of turns, taking 1d8 poison on failure. Regain 1 use on short rest.</description></sheet>
+		<sheet usage="CON mod/Long Rest"><description>When you hit with a Natural Weapon, force a CON save against your Shifter DC. Failure: 1d8 + Shifter level poison damage and Poisoned. Success: half damage and not Poisoned. Poisoned target repeats the save at end of turns, taking 1d8 poison on failure. Regain 1 use on short rest.</description></sheet>
 	</element>
 	<element name="Adaptive Camouflage" type="Archetype Feature" source="laserllama's Shifter" id="ID_LASERLL_ARCHETYPE_FEATURE_SHIFTER_ADAPTIVE_CAMOUFLAGE">
 		<description><p>As an action, you can expend one use of Adrenaline Surge to turn invisible for 10 minutes, as if by the invisibility spell. Unlike the spell, this ability does not require concentration.</p></description>

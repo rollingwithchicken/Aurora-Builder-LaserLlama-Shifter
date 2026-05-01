@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name></name>
-		<update version="1.0.1">
+		<update version="1.0.4">
 			<file name="source.xml" url="https://raw.githubusercontent.com/rmurgasa/Aurora-Builder-LaserLlama-Shifter/main/source.xml" />
 		</update>
 	</info>
