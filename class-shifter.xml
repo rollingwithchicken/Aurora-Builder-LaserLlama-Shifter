@@ -2,8 +2,8 @@
 <elements>
 	<info>
 		<name>Shifter</name>
-		<update version="1.0.5">
-			<file name="class-shifter.xml" url="https://raw.githubusercontent.com/rmurgasa/Aurora-Builder-LaserLlama-Shifter/main/class-shifter.xml" />
+		<update version="1.0.6">
+			<file name="class-shifter.xml" url="https://raw.githubusercontent.com/rollingwithchicken/Aurora-Builder-LaserLlama-Shifter/main/class-shifter.xml" />
 		</update>
 	</info>
 	<element name="Shifter" type="Class" source="laserllama's Shifter" id="ID_LASERLL_CLASS_SHIFTER">

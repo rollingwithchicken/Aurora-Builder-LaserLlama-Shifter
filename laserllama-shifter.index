@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
 	<info>
-		<update version="1.0.5">
-			<file name="laserllama-shifter.index" url="https://raw.githubusercontent.com/rmurgasa/Aurora-Builder-LaserLlama-Shifter/main/laserllama-shifter.index" />
+		<update version="1.0.6">
+			<file name="laserllama-shifter.index" url="https://raw.githubusercontent.com/rollingwithchicken/Aurora-Builder-LaserLlama-Shifter/main/laserllama-shifter.index" />
 		</update>
 	</info>
 	<files>
-		<file name="source.xml" url="https://raw.githubusercontent.com/rmurgasa/Aurora-Builder-LaserLlama-Shifter/main/source.xml" />
-		<file name="class-shifter.xml" url="https://raw.githubusercontent.com/rmurgasa/Aurora-Builder-LaserLlama-Shifter/main/class-shifter.xml" />
+		<file name="source.xml" url="https://raw.githubusercontent.com/rollingwithchicken/Aurora-Builder-LaserLlama-Shifter/main/source.xml" />
+		<file name="class-shifter.xml" url="https://raw.githubusercontent.com/rollingwithchicken/Aurora-Builder-LaserLlama-Shifter/main/class-shifter.xml" />
 	</files>
 </index>
